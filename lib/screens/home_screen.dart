@@ -41,6 +41,11 @@ class HomeScreen extends StatelessWidget {
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
               ),
+              trailing: Icon(
+                movie.isWatchlisted
+                    ? Icons.bookmark
+                    : Icons.bookmark_border,
+              ),
               onTap: () {
                 Navigator.push(
                   context,
